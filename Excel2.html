@@ -12,12 +12,12 @@
     <h1>Pizza Sales Data Analysis Using MySQL and Excel</h1>
   </header>
 
-  <section>
+  <section class="info-section project-box">
     <h2>Project Overview</h2>
     <p>This is a SQL and Excel project analyzing pizza sales data. It involves querying the database and creating visualizations in Excel.</p>
   </section>
 
-  <section>
+  <section class="info-section project-box">
     <h2>Dataset Overview</h2>
     <ul>
       <li><strong>pizza_id:</strong> Unique ID for each pizza sold</li>
@@ -41,15 +41,15 @@
     </p>
   </section>
 
-  <section>
+  <section class="info-section project-box">
     <h2>SQL Queries</h2>
 
     <h3>Pizza Sales Analysis</h3>
-    <pre>
+    <pre><code>
 -- Total Revenue
 SELECT SUM(total_price) AS total_revenue
 FROM pizza_sales.sales;
-
+    
 -- Average Order Value = Total Revenue / Total Orders
 SELECT SUM(total_price) / COUNT(DISTINCT order_id) AS average_order_value
 FROM pizza_sales.sales;
@@ -101,25 +101,25 @@ FROM pizza_sales.sales
 GROUP BY pizza_name
 ORDER BY total_sold ASC
 LIMIT 5;
-    </pre>
+    </code></pre>
   </section>
 
-  <section>
-    <h2>Key Insights</h2>
-    <ul>
-      <li>Large-sized pizzas brought in the highest revenue.</li>
-      <li>Top 5 pizzas accounted for a significant portion of sales.</li>
-      <li>Fridays and weekends saw the highest number of orders.</li>
-      <li>Meat and Classic categories were the most popular.</li>
-    </ul>
-  </section>
+  
 
-  <section>
+  <section class="info-section project-box">
     <h2>Pizza Sales Dashboard</h2>
     <p><img src="Pizza.jpg" alt="Pizza sales dashboard image" width="100%"></p>
   </section>
 
-  <section>
+  <section class="info-section project-box">
+    <h2>Key Insights</h2>
+    <ul>
+      <li>Large-sized pizzas brought in the highest revenue.</li>
+      <li>Classic and Supreme categories were the top 2 most popular.</li>
+    </ul>
+  </section>
+
+  <section class="info-section project-box">
     <button onclick="location.href='index.html'">Back to Portfolio</button>
   </section>
 
